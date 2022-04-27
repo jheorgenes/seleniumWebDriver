@@ -18,8 +18,8 @@ public class PageObject {
 		}
 		/* chamando as configurações do WebDriver para configurar o tempo em que será executado */
 		this.browser.manage().timeouts()
-				.implicitlyWait(10, TimeUnit.SECONDS) /* Aguarda buscar um elemento da página por 5 segundos */
-				.pageLoadTimeout(15, TimeUnit.SECONDS); /* Aguarda a página carregar 10 segundos */
+				.implicitlyWait(5, TimeUnit.SECONDS) /* Aguarda buscar um elemento da página por 5 segundos */
+				.pageLoadTimeout(10, TimeUnit.SECONDS); /* Aguarda a página carregar 10 segundos */
 	}
 	
 	public void fechar() {
